@@ -265,3 +265,246 @@ nav ul{
 }
 
 }
+/* ===================================
+   SELECTED PROJECTS & WORKS
+=================================== */
+
+.works{
+
+    width:75%;
+
+    max-width:1000px;
+
+    margin:20px auto 100px;
+
+}
+
+.works h2{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:30px;
+
+    color:#1E4E8C;
+
+    margin-bottom:10px;
+
+}
+
+.works-intro{
+
+    color:#617D99;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ===================================
+   WORK GRID
+=================================== */
+
+.works-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:20px;
+
+}
+
+
+/* ===================================
+   WORK CARD
+=================================== */
+
+.work-card{
+
+    display:block;
+
+    text-decoration:none;
+
+    background:white;
+
+    border-radius:14px;
+
+    padding:25px;
+
+    border:1px solid #DCEEFF;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.work-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#2F6FED;
+
+    box-shadow:0 15px 30px rgba(47,111,237,.13);
+
+}
+
+
+/* ===================================
+   CATEGORY
+=================================== */
+
+.work-category{
+
+    display:inline-block;
+
+    background:#EAF5FF;
+
+    color:#2F6FED;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    margin-bottom:14px;
+
+}
+
+
+/* ===================================
+   TITLE
+=================================== */
+
+.work-card h3{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:20px;
+
+    color:#1E4E8C;
+
+    margin-bottom:12px;
+
+}
+
+
+/* ===================================
+   DESCRIPTION
+=================================== */
+
+.work-card p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    color:#617D99;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ===================================
+   VIEW PROJECT
+=================================== */
+
+.view-project{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#2F6FED;
+
+    transition:.3s;
+
+}
+
+.work-card:hover .view-project{
+
+    letter-spacing:.3px;
+
+}
+
+
+/* ===================================
+   ALL PROJECTS
+=================================== */
+
+.all-projects{
+
+    text-align:center;
+
+    margin-top:35px;
+
+}
+
+.all-projects a{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#1E4E8C;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:25px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.all-projects a:hover{
+
+    background:#2F6FED;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:800px){
+
+    .works{
+
+        width:88%;
+
+    }
+
+    .works-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .works h2{
+
+        font-size:26px;
+
+    }
+
+}
