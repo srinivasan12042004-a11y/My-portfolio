@@ -1,0 +1,440 @@
+/* ===================================
+   RESET
+=================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:#EAF5FF;
+
+    font-family:'Inter',sans-serif;
+
+    color:#35506A;
+
+}
+
+
+/* ===================================
+   NAVIGATION
+=================================== */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:75px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#1E4E8C;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:#5A718A;
+
+    font-weight:500;
+
+    position:relative;
+
+}
+
+nav ul li a.active{
+
+    color:#1E4E8C;
+
+    font-weight:700;
+
+}
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#2F6FED;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+nav ul li a.active::after{
+
+    width:100%;
+
+}
+
+
+/* ===================================
+   MAIN SECTION
+=================================== */
+
+.events{
+
+    width:75%;
+
+    max-width:1000px;
+
+    margin:125px auto 80px;
+
+}
+
+.back{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:#2F6FED;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.events h1{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:40px;
+
+    color:#1E4E8C;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    font-size:17px;
+
+    color:#617D99;
+
+    margin-bottom:50px;
+
+}
+
+
+/* ===================================
+   SECTION TITLE
+=================================== */
+
+.section-title{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:25px;
+
+    color:#1E4E8C;
+
+    margin-top:45px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ===================================
+   EVENT CARD
+=================================== */
+
+.event-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    gap:25px;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.05);
+
+    border-left:5px solid #2F6FED;
+
+    transition:.3s;
+
+}
+
+.event-card:hover{
+
+    transform:translateX(5px);
+
+    box-shadow:0 15px 30px rgba(47,111,237,.12);
+
+}
+
+
+/* ===================================
+   DATE
+=================================== */
+
+.event-date{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:12px;
+
+    background:#DCEEFF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+.event-date span{
+
+    color:#2F6FED;
+
+    font-weight:700;
+
+    font-size:16px;
+
+}
+
+
+/* ===================================
+   CONTENT
+=================================== */
+
+.event-content{
+
+    flex:1;
+
+}
+
+.event-content h3{
+
+    color:#1E4E8C;
+
+    font-size:21px;
+
+    margin-bottom:7px;
+
+}
+
+.event-type{
+
+    color:#2F6FED !important;
+
+    font-weight:600;
+
+    font-size:14px !important;
+
+    margin-bottom:8px;
+
+}
+
+.event-content p{
+
+    color:#617D99;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+
+/* ===================================
+   TAGS
+=================================== */
+
+.event-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-top:14px;
+
+}
+
+.event-tags span{
+
+    background:#EAF5FF;
+
+    color:#2F6FED;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+/* ===================================
+   UPCOMING
+=================================== */
+
+.upcoming{
+
+    border-left-color:#6B8EAD;
+
+}
+
+.upcoming .event-date{
+
+    background:#E8F1F8;
+
+}
+
+.upcoming .event-date span{
+
+    color:#55708A;
+
+}
+
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:800px){
+
+    nav{
+
+        padding:0 25px;
+
+    }
+
+    nav ul{
+
+        gap:15px;
+
+    }
+
+    .events{
+
+        width:90%;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    nav{
+
+        position:relative;
+
+        height:auto;
+
+        flex-direction:column;
+
+        padding:20px;
+
+    }
+
+    nav ul{
+
+        margin-top:15px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .events{
+
+        margin-top:50px;
+
+    }
+
+    .events h1{
+
+        font-size:32px;
+
+    }
+
+    .event-card{
+
+        flex-direction:column;
+
+    }
+
+}
